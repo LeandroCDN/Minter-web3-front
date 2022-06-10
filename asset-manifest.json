@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.css": "/PatoProyects2/ohmyminterWebsite/static/css/main.073c9b0a.css",
-    "main.js": "/PatoProyects2/ohmyminterWebsite/static/js/main.b02213bb.js",
-    "index.html": "/PatoProyects2/ohmyminterWebsite/index.html",
-    "main.073c9b0a.css.map": "/PatoProyects2/ohmyminterWebsite/static/css/main.073c9b0a.css.map",
-    "main.b02213bb.js.map": "/PatoProyects2/ohmyminterWebsite/static/js/main.b02213bb.js.map"
+    "main.css": "/oh-my-minter-front/static/css/main.073c9b0a.css",
+    "main.js": "/oh-my-minter-front/static/js/main.b02213bb.js",
+    "index.html": "/oh-my-minter-front/index.html",
+    "main.073c9b0a.css.map": "/oh-my-minter-front/static/css/main.073c9b0a.css.map",
+    "main.b02213bb.js.map": "/oh-my-minter-front/static/js/main.b02213bb.js.map"
   },
   "entrypoints": [
     "static/css/main.073c9b0a.css",
