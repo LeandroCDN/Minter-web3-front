@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/PatoProyects2/ohmyminterWebsite/static/css/main.073c9b0a.css",
-    "main.js": "/PatoProyects2/ohmyminterWebsite/static/js/main.4b3d967e.js",
+    "main.js": "/PatoProyects2/ohmyminterWebsite/static/js/main.b02213bb.js",
     "index.html": "/PatoProyects2/ohmyminterWebsite/index.html",
     "main.073c9b0a.css.map": "/PatoProyects2/ohmyminterWebsite/static/css/main.073c9b0a.css.map",
-    "main.4b3d967e.js.map": "/PatoProyects2/ohmyminterWebsite/static/js/main.4b3d967e.js.map"
+    "main.b02213bb.js.map": "/PatoProyects2/ohmyminterWebsite/static/js/main.b02213bb.js.map"
   },
   "entrypoints": [
     "static/css/main.073c9b0a.css",
-    "static/js/main.4b3d967e.js"
+    "static/js/main.b02213bb.js"
   ]
 }
