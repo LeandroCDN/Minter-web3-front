@@ -10,7 +10,7 @@ const currencyAddress = "0xF9b0920B4C8cC2228bF0C54503307a229cE992A9";
 
 const Minter = ({ accounts, setAccounts, allowance }) => {
   const [price, setPrice] = useState(0);
-  console.log(allowance);
+  // console.log(allowance);
   const [isAllowance, setIsAllowance] = useState(allowance>0);
   const isConected = Boolean(accounts[0]);
 
@@ -41,7 +41,7 @@ const Minter = ({ accounts, setAccounts, allowance }) => {
       const contractGameLogic = new ethers.Contract(gameLogicAddress, GameLogic.abi, signer);      
       try {
         const response = await contractGameLogic.buy();
-        console.log("Response ow approve: " + response)
+        // console.log("Response ow approve: " + response)
         
       } catch (err) {
         console.log(err);
