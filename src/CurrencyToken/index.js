@@ -1,4 +1,5 @@
 import { useState } from "react";
+import "./CurrencyToken.css";
 import { ethers, bigNumber } from "ethers";
 import  currency  from "../contracts/token/currency/currency.json";
 
@@ -41,15 +42,15 @@ const CurrencyToken = ({ accounts, setAccounts, setAllowance }) => {
 
 
   return (
-    <div>
-      <h2> Token Balance</h2>
-      <p> This tokens help you to mint Nfts</p>
+    <form className='formGlass formGlass-conected'>
+      <h2 className="hConected"> Token Balance</h2>
+      <p className="forget"> This tokens help you to mint Nfts</p>
       {isConected
-      ? ( <button onClick={getBalance}>Get Balance</button> )
-      : ( <p> You must be conected to interact this dApp</p> )
+      ? ( <button onClick={getBalance} className="Button-Conected Button">Get Balance</button> )
+      : ( <p> Your must be conected to interact this dApp</p> )
       }
-      <p> You balance: {balance} CryTokens</p> 
-    </div>
+      <p className="forget"> Your balance: {balance} CryTokens</p> 
+    </form>
   );
 }
 export { CurrencyToken };

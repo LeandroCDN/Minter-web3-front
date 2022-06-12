@@ -1,0 +1,14 @@
+.hmint {
+  position: relative;
+  color : #fff;
+  font-size: 26px;
+  font-weight: 600;
+  letter-spacing: 0px;
+  margin-bottom: 25px;
+  bottom: 5px;
+}
+
+.divPrice{
+  margin-bottom: 25px;
+  bottom: 5px;
+}

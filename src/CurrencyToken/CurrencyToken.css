@@ -1,0 +1,22 @@
+.hConected {
+  position: relative;
+  color : #fff;
+  font-size: 26px;
+  font-weight: 600;
+  letter-spacing: 0px;
+  margin-bottom: 25px;
+  bottom: 5px;
+}
+
+.formGlass .Button-Conected{
+
+  background: rgba(255, 255, 255, 0.849);
+  color: rgb(70, 69, 69);
+  margin-top: 10px;
+  margin-bottom: 10px;
+  max-width: 150px;
+  cursor: pointer;
+  font-weight: 600;
+  letter-spacing: 0px;
+}
+

@@ -1,0 +1,98 @@
+*
+{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+.navUl {
+  position: absolute;
+  display: flex;
+  z-index: 2;
+  top: 1.5%;
+  left: 1%;
+}
+
+ul li {
+  position: relative;
+  list-style: none;
+  margin: 10px;
+}
+
+ul li a 
+{
+  position : relative;
+  width: 95px;
+  height: 70px;
+  display: inline-block;
+  border-radius: 10px;
+  display: flex;
+  background-color: rgba(187, 183, 183, 0.055);
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  color: #fff;
+  font-size: 1.3em;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  border-right:1px solid rgba(255, 255, 255, 0.2) ;
+  border-bottom:1px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 0 5px 45px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(2px);
+  transition: 0.5s;
+  overflow: hidden;
+}
+
+ul li a:hover
+{
+  transform: scale(1.15);
+
+} 
+ul li a::before 
+{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50px;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.5);
+  transform: skewX(45deg) translateX(150px);
+  transition: 0.5s;
+}
+ul li a:hover:before 
+{
+  transform: skewX(45deg) translateX(-150px);
+}
+
+.navUl-left {
+  position: absolute;
+  display: flex;
+  z-index: 2;
+  top: 1.5%;
+  left: 90%;
+}
+
+.a-Conect {
+  width: 120px;
+  height: 70px;
+}
+
+.navUl-center
+{
+  position: absolute;
+  display: flex;
+  z-index: 2;
+  top: 1.5%;
+  right: 45.5%;
+}
+
+.formGlass .Button-nav{
+
+  background: rgba(255, 255, 255, 0.849);
+  color: rgb(70, 69, 69);
+  margin-bottom: 10px;
+  max-width: 150px;
+  cursor: pointer;
+  font-weight: 600;
+  letter-spacing: 0px;
+}

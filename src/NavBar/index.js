@@ -1,5 +1,6 @@
 import React from 'react';
 import { ethers } from "ethers";
+import './NavBar.css'
 
 const networks = {
   matic: {
@@ -40,7 +41,7 @@ const changeNetwork = async ({networkName, setError}) => {
 }
 
 
-const NavBar = ({ accounts, setAccounts }) => {
+const NavBar = ({ accounts, setAccounts, setConected }) => {
   const [error, setError] = React.useState();
   const isConected = Boolean(accounts[0]);
 
@@ -83,21 +84,42 @@ const NavBar = ({ accounts, setAccounts }) => {
   
   
   return(
-    <div>
-      {/* left side - social media icons */}
-      <div> Twitter</div>
-      <div> Github</div>
-      <div> LinkedIn</div>
+    <>
+      <ul className="navUl">
+        <li className="navLi"><a href='https://twitter.com/Patoverde_' target="_blank"><p>Twitter</p></a></li>
+        <li className="navLi"><a  href='https://github.com/LeandroCDN' target="_blank"><p>Github</p></a></li>
+        <li className="navLi"><a  href='https://www.linkedin.com/in/leandro-ariel-labiano-ramo/' target="_blank"><p>LinkeDin</p></a></li>
+      </ul> 
 
-      <div>About</div>
-      <div>Contact</div>
-
-      {/*conect*/}
+      <ul className="navUl-left">
+        <li className="navLi-Abaut"><a href='#'><p>About</p></a></li>
+      </ul>    
+      
       {isConected
-      ? ( <p>Conected</p> )
-      : ( <button onClick ={connectAccount}>Connect!</button> )
+      ? ( 
+        <ul className="navUl-center">
+          <li className="navLi-center">
+            <a className="a-Conect">
+              <p>Conected</p> 
+            </a>         
+          </li>
+        </ul> 
+      )
+      : (
+        <div className='boxGlass'>
+          <div className='boxGlass square s4'></div>          
+          <div className='containerGlass'>
+            <form className='formGlass'>
+              <h2 className="hConect"> CONECT YOUR WALLET</h2>
+              <button onClick ={connectAccount} className="Button-nav Button">Connect</button>
+              <p className="forget">Need help to conect? <a href="https://metamask.io/" target=" _blank">Click Here</a></p>
+            </form>
+          </div>
+          
+        </div>
+        )
       } 
-    </div>
+    </>
   )
 }
 

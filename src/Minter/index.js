@@ -3,6 +3,7 @@ import { ethers, bigNumber } from "ethers";
 import  ohMyMinter  from "../contracts/ohMyMinter.sol/ohMyMinter.json";
 import  GameLogic  from "../contracts/GameLogic/GameLogic.json";
 import  currency  from "../contracts/token/currency/currency.json";
+import "./Minter.css";
 
 const nftAddress = "0xa0e1b73c36A4aB123FAebbbFeeb7CDAaafbb6Bb4";
 const gameLogicAddress = "0x6a11F44Ed82f8eCA8BE141e08676Aa02471Aa134";
@@ -66,21 +67,23 @@ const Minter = ({ accounts, setAccounts, allowance }) => {
   }
 
   return (
-    <div>
-      <h2> Mint a nft! </h2>
-      <p> This tokens help you to mint Nfts</p>
-      { isConected
-        ? ( <button onClick={getCurrentPrice}>Actualice Price</button> )
-        : ( <p> You must be conected to interact this dApp</p> )
-      }
-      <p> Price: {price} </p>, 
+    <form className='formGlass'>
+      <h2 className="hmint"> Mint a nft! </h2>
+      <div className='divPrice'>
+        <p className="forget"> This tokens help you to mint Nfts</p>
+        { isConected
+          ? ( <button onClick={getCurrentPrice} className="Button-nav Button Button-Conected">Update Price</button> )
+          : ( <p className="forget"> You must be conected to interact this dApp</p> )
+        }
+        <p className="forget"> Price: {price} </p>, 
+      </div>
         <div>
           {allowance > 0 || isAllowance
-            ? ( <button onClick={mintNft}>Mint Nft</button> )
-            : ( <button onClick={approve}>Approve</button>  )
+            ? ( <button onClick={mintNft} className="Button-nav Button">Mint Nft</button> )
+            : ( <button onClick={approve} className="Button-nav Button">Approve</button>  )
           }        
         </div>
-    </div>
+    </form>
   );
 
 
