@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/oh-my-minter-front/static/css/main.073c9b0a.css",
-    "main.js": "/oh-my-minter-front/static/js/main.b02213bb.js",
+    "main.css": "/oh-my-minter-front/static/css/main.31c683ac.css",
+    "main.js": "/oh-my-minter-front/static/js/main.da895139.js",
     "index.html": "/oh-my-minter-front/index.html",
-    "main.073c9b0a.css.map": "/oh-my-minter-front/static/css/main.073c9b0a.css.map",
-    "main.b02213bb.js.map": "/oh-my-minter-front/static/js/main.b02213bb.js.map"
+    "main.31c683ac.css.map": "/oh-my-minter-front/static/css/main.31c683ac.css.map",
+    "main.da895139.js.map": "/oh-my-minter-front/static/js/main.da895139.js.map"
   },
   "entrypoints": [
-    "static/css/main.073c9b0a.css",
-    "static/js/main.b02213bb.js"
+    "static/css/main.31c683ac.css",
+    "static/js/main.da895139.js"
   ]
 }
