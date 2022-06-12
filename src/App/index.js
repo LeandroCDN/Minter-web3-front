@@ -10,7 +10,7 @@ function App() {
   
 
   return (
-    <section>
+    <section>      
       <div className="color"> </div>
       <div className="color"> </div>
       <div className="color"> </div>
@@ -20,24 +20,23 @@ function App() {
           <div className='boxGlass square s2'></div>
           <div className='boxGlass square s3'></div>
         </div>
-          {accounts.length === 0 
+          {accounts.length === 0  
           ? (  <NavBar accounts={accounts} setAccounts={setAccounts} />  )
           : ( <>
               <NavBar accounts={accounts} setAccounts={setAccounts} />
               <div className='boxGlass boxConect'>
-              <div className='boxGlass square s5'></div>
-              <div className='boxGlass square s6'></div>             
+                <div className='boxGlass square s5'></div>
+                <div className='boxGlass square s6'></div>      
                 <div className='containerGlass conected'>
-                
-                  <CurrencyToken 
-                      accounts={accounts} 
-                      setAccounts={setAccounts} 
-                      setAllowance={setAllowance}
-                      
-                      />
-                  <Minter accounts={accounts} setAccounts={setAccounts}  allowance={allowance}/>
-                 
-                </div>
+                    <CurrencyToken 
+                        accounts={accounts} 
+                        setAccounts={setAccounts} 
+                        setAllowance={setAllowance}
+                        
+                        />
+                    <Minter accounts={accounts} setAccounts={setAccounts}  allowance={allowance}/>
+                    
+                  </div>
               </div>
             </> 
           )  

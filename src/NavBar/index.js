@@ -85,6 +85,7 @@ const NavBar = ({ accounts, setAccounts, setConected }) => {
   
   return(
     <>
+      
       <ul className="navUl">
         <li className="navLi"><a href='https://twitter.com/Patoverde_' target="_blank"><p>Twitter</p></a></li>
         <li className="navLi"><a  href='https://github.com/LeandroCDN' target="_blank"><p>Github</p></a></li>
@@ -111,7 +112,8 @@ const NavBar = ({ accounts, setAccounts, setConected }) => {
           <div className='containerGlass'>
             <form className='formGlass'>
               <h2 className="hConect"> CONECT YOUR WALLET</h2>
-              <button onClick ={connectAccount} className="Button-nav Button">Connect</button>
+              <button type="button" onClick ={connectAccount} className="Button-nav Button">Connect</button>
+              
               <p className="forget">Need help to conect? <a href="https://metamask.io/" target=" _blank">Click Here</a></p>
             </form>
           </div>
