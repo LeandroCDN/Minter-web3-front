@@ -46,7 +46,7 @@ const CurrencyToken = ({ accounts, setAccounts, setAllowance }) => {
       <h2 className="hConected"> Token Balance</h2>
       <p className="forget"> This tokens help you to mint Nfts</p>
       {isConected
-      ? ( <button onClick={getBalance} className="Button-Conected Button">Get Balance</button> )
+      ? ( <button type="button" onClick={getBalance} className="Button-Conected Button">Get Balance</button> )
       : ( <p> Your must be conected to interact this dApp</p> )
       }
       <p className="forget"> Your balance: {balance} CryTokens</p> 

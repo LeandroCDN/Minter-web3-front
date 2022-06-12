@@ -72,15 +72,15 @@ const Minter = ({ accounts, setAccounts, allowance }) => {
       <div className='divPrice'>
         <p className="forget"> This tokens help you to mint Nfts</p>
         { isConected
-          ? ( <button onClick={getCurrentPrice} className="Button-nav Button Button-Conected">Update Price</button> )
+          ? ( <button type="button" onClick={getCurrentPrice} className="Button-nav Button Button-Conected">Update Price</button> )
           : ( <p className="forget"> You must be conected to interact this dApp</p> )
         }
         <p className="forget"> Price: {price} </p>, 
       </div>
         <div>
           {allowance > 0 || isAllowance
-            ? ( <button onClick={mintNft} className="Button-nav Button">Mint Nft</button> )
-            : ( <button onClick={approve} className="Button-nav Button">Approve</button>  )
+            ? ( <button  type="button" onClick={mintNft} className="Button-nav Button">Mint Nft</button> )
+            : ( <button type="button" onClick={approve} className="Button-nav Button">Approve</button>  )
           }        
         </div>
     </form>
